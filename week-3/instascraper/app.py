@@ -25,11 +25,11 @@ if reel_link or img_link or vid_link == True:
 
     # login manually to save session and prevent further log ins in future
     options = Options()
-    options.add_argument("--user-data-dir=C:\\Users\\flavi\\Documents\\media-ig\\files\\Data")
+    options.add_argument("--user-data-dir=specify the path to an empty folder here")
     options.page_load_strategy = 'normal'
 
     # assign web driver
-    driver = webdriver.Chrome(executable_path="C:\\SeleniumDrivers\\chromedriver.exe", chrome_options=options)
+    driver = webdriver.Chrome(executable_path="specify the path to your driver here", chrome_options=options)
 
     # run link on web driver
     driver.get(url_link)
