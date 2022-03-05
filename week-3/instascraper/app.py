@@ -38,7 +38,7 @@ if reel_link or img_link or vid_link == True:
     #parse link html
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     images = soup.find_all('img')
-    videos = soup.find_all('videos')
+    videos = soup.find_all('video')
     
     
     # save media to project folder
